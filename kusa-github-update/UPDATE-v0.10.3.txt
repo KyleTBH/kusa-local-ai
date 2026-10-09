@@ -1,0 +1,8 @@
+Kusa v0.10.3 — demo data and Quick file sorting
+
+1. Stop Kusa with Ctrl+C in its server window.
+2. Extract this ZIP into the same kusa-local-ai folder and replace matching files. Keep .venv.
+3. Run start.bat; it should say KUSA v0.10.3.
+4. Refresh http://localhost:8765 with Ctrl+F5.
+5. On the Personal overview, click Load demo data to add clearly labeled sample files, tasks, schedules, and finance entries across workspaces. This adds examples without clearing your own information.
+6. To try Quick file sorting, click Upload a file, choose a PDF/TXT/Markdown file, open Ask Kusa, and type “Move [exact filename] to Finance”. Confirm where it should go. The move command does not require Ollama to classify the file.

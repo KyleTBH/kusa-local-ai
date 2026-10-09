@@ -1,0 +1,10 @@
+Kusa v0.10.4 — guided local AI setup
+
+1. Stop Kusa with Ctrl+C in its server window.
+2. Extract this ZIP into the same kusa-local-ai folder and replace matching files. Keep .venv.
+3. Run start.bat; it should say KUSA v0.10.4.
+4. Refresh http://localhost:8765 with Ctrl+F5.
+5. Open Settings. Kusa checks for Ollama automatically and shows whether the selected model is ready.
+6. If setup is needed, follow the short steps shown there. Installing Ollama and downloading a model require internet and your approval. Once downloaded, the model can run offline.
+
+Advanced model selection stays available if you already know which local Ollama model to use.

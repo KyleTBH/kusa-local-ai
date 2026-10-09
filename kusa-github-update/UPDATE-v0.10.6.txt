@@ -1,0 +1,5 @@
+Kusa v0.10.6 — PWA offline text-file upload
+
+The iPhone PWA can now import TXT and Markdown files directly in the browser and save their text to the current device. Offline iPhone uploads are limited to 1 MB per file and 300,000 characters. PDF text extraction and Ask Kusa still require a secure connection to the computer backend.
+
+To install the PWA, publish the web app to an HTTPS site, then open it in iPhone Safari and choose Share → Add to Home Screen.

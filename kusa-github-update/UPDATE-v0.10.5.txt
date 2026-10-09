@@ -1,0 +1,10 @@
+Kusa v0.10.5 — iPhone home-screen app support
+
+This update adds a Progressive Web App manifest, iPhone home-screen icon, and offline caching for the app shell.
+
+To install on iPhone after hosting on a secure HTTPS site:
+1. Open the Kusa HTTPS link in Safari.
+2. Tap Share, then Add to Home Screen, then Add.
+3. Open Kusa from the new home-screen icon.
+
+Important: this is a free home-screen web app, not an App Store app. This build stores data separately in the iPhone browser and does not connect to the computer's Ollama model. Ask Kusa and server-based PDF/TXT import require a secure backend connection, which is not included here. The site must be hosted over HTTPS for service-worker/offline support.

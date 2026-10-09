@@ -1,0 +1,7 @@
+Kusa v0.10.8 — Windows executable build
+
+This update adds build-windows.bat. Run it on Windows with Python 3.10+ and internet to create dist\Kusa.exe.
+The executable bundles Kusa's Python server and web interface, then opens the app in your browser.
+Ollama and the downloaded AI model remain separate installs. After they are installed, Ask Kusa can work offline.
+
+This is a Windows build recipe. The executable must be built and tested on Windows; this development environment cannot produce or verify the Windows .exe.
