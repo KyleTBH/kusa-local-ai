@@ -1,0 +1,15 @@
+{
+  "id": "./",
+  "name": "Kusa — Your workspace, together",
+  "short_name": "Kusa",
+  "description": "A private workspace for your files, tasks, and plans.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#f8fafc",
+  "theme_color": "#f8fafc",
+  "icons": [
+    { "src": "assets/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "assets/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any maskable" }
+  ]
+}

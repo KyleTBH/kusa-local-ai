@@ -1,0 +1,7 @@
+KUSA GITHUB UPDATE FILES
+
+These files are arranged in the same folders as the repository. Extract this ZIP, then upload the files and folders into the ROOT of your existing GitHub repository, keeping their folder paths. Replace matching files when GitHub asks. Do not upload this ZIP itself.
+
+After committing, enable GitHub Pages from the main branch and /docs folder in Settings > Pages. Publish a GitHub Release to trigger the Windows app build workflow.
+
+Phone PWA: the hosted app can organize local files and workspaces; phone-side offline Ask Kusa AI is not included yet.

@@ -1,0 +1,8 @@
+Kusa v0.9 update — Devin UI, Business areas, and folder actions
+
+1. Stop Kusa by pressing Ctrl+C in its command window.
+2. Extract this ZIP directly into your existing kusa-local-ai project folder and replace files with the same names. Keep your existing .venv folder.
+3. Double-click start.bat to restart Kusa.
+4. In the same browser tab, press Ctrl+F5.
+
+This package includes the complete UI and assets from your uploaded Devin project. Business gets all 18 organizer areas. Every folder has a three-dot menu for Rename, Archive/Restore, and Delete. Deleting can move contents to another folder, or permanently delete them after a separate confirmation. Existing browser storage is kept.

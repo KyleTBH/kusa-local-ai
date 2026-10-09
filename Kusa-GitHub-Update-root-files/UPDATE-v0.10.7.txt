@@ -1,0 +1,10 @@
+Kusa v0.10.7 — Ask Kusa over local Wi-Fi
+
+Use the same Ollama model already installed on the computer from an iPhone on the same Wi-Fi. Internet is not needed, but Wi-Fi must remain on.
+
+1. Close the old Kusa server window with Ctrl+C. Keep Ollama open and confirm the model has already been downloaded.
+2. Run start-phone.bat. If Windows Firewall asks, allow Python on Private networks only.
+3. On iPhone, while connected to the same Wi-Fi, open the exact phone link printed in the computer window in Safari. The link includes a private pairing token. Use it only on a trusted Wi-Fi network and do not share it.
+4. Ask Kusa about a file. The phone sends the question and selected document text to your computer over Wi-Fi; the existing Ollama model answers locally on the computer.
+
+Phone mode is optional. start.bat remains localhost-only. The hosted HTTPS preview is not the address to use for this mode. Turning Wi-Fi off disconnects the phone, but Ask Kusa keeps working on the computer.
