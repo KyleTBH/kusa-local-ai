@@ -1,0 +1,47 @@
+name: Build Windows download
+
+on:
+  release:
+    types: [published]
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: windows-latest
+    steps:
+      - name: Check out Kusa
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Build Kusa.exe
+        run: |
+          python -m pip install -r requirements.txt pyinstaller
+          python -m PyInstaller --noconfirm --clean --onefile --name Kusa --collect-all pypdf --add-data "web;web" server.py
+
+      - name: Package Windows download
+        shell: pwsh
+        run: |
+          @'
+          Kusa for Windows
+
+          1. Extract Kusa-Windows.zip.
+          2. Install and open Ollama from https://ollama.com/download/windows.
+          3. In PowerShell, run: ollama pull qwen2.5:3b
+          4. Double-click Kusa.exe. It opens Kusa in your browser; keep the console window open.
+          5. After the model download finishes, Ask Kusa can work without internet.
+
+          Ollama and the AI model are not included in Kusa-Windows.zip.
+          '@ | Set-Content -Encoding utf8 dist/README-Kusa.txt
+          Compress-Archive -Path dist/Kusa.exe,dist/README-Kusa.txt -DestinationPath dist/Kusa-Windows.zip -Force
+
+      - name: Attach download to GitHub Release
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          RELEASE_TAG: ${{ github.event.release.tag_name }}
+        run: gh release upload "$env:RELEASE_TAG" dist/Kusa-Windows.zip --clobber
