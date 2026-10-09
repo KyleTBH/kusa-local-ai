@@ -23,4 +23,17 @@ button:not(:disabled):active{transform:scale(.96)}
 dialog[open]{animation:kusa-dialog-in 180ms ease-out both}
 @keyframes kusa-dialog-in{from{opacity:0;transform:translateY(8px) scale(.985)}to{opacity:1;transform:translateY(0) scale(1)}}
 @media(max-width:650px){.brand{width:150px;height:76px}.header{height:78px}.chat-shell .brand{width:126px;height:64px}}
+.mode-switch{display:flex;gap:4px;padding:3px;background:#f0f4fb;border:1px solid #e3e9f1;border-radius:14px;margin:9px auto 0;max-width:340px;width:100%}
+.mode-switch button{flex:1;padding:8px 5px;border-radius:11px;font-size:12px;color:#58677e;transition:background .2s,transform .18s}
+.mode-switch button.active{background:white;color:#2563eb;box-shadow:0 1px 5px #1a2e551a;font-weight:650}
+.mode-switch button:active{transform:scale(.96)}
+.sources a.source-btn{display:inline-block;text-decoration:none}
+.workspace-picker{display:flex;align-items:center;justify-content:space-between;gap:12px;max-width:420px;margin:2px 0 18px;color:#607088;font-size:12px;font-weight:650}
+.workspace-picker select{appearance:none;min-width:175px;border:1px solid #dfe7f3;border-radius:14px;background:#fff;padding:11px 30px 11px 15px;color:#18294a;font-size:14px;font-weight:650;cursor:pointer}
+.workspace-description{color:#66768b;font-size:13px;margin:0 0 18px;line-height:1.5}
+.finance-stats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin-bottom:12px}
+.finance-stats .card{display:flex;flex-direction:column;gap:9px;padding:18px 14px;min-width:0}
+.finance-stats strong{font-size:18px;letter-spacing:-.5px;overflow-wrap:anywhere}
+.quick-tip{padding:19px;line-height:1.6}.quick-tip p{color:#67768b;font-size:13px;margin-top:7px}
+@media(max-width:650px){.workspace-picker{margin-bottom:15px}.finance-stats .card{padding:14px 9px}.finance-stats strong{font-size:13px}}
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}button:not(:disabled):active,.folder-card:hover,.btn:hover:not(:disabled){transform:none}}

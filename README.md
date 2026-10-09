@@ -97,3 +97,10 @@ Optional environment variable: KUSA_PORT (default 8765). The Windows browser lau
 - Your name/team, repository URL, video post URL, and measured results must be added by you. Do not report unmeasured performance claims.
 
 Official API reference: https://docs.ollama.com/api/chat and https://docs.ollama.com/api/tags
+## Wikipedia search (optional)
+
+Ask Kusa has **My files · offline** and **Wikipedia · online** modes. File mode uses imported documents and a local Ollama model. Online mode sends the question to Wikipedia's search API, then passes short article snippets to the local Ollama model. Kusa displays article links for verification. Wikipedia search requires internet but no account, API key, or payment. Wikipedia does not cover all websites or breaking news, and excerpts may not be current. Check the article and its sources before relying on time-sensitive facts. Offline mode still works without Wi-Fi.
+
+## Four workspaces (v0.7)
+
+Use the Workspace menu to switch between Personal, Education, Finance, and Business. Existing Programming, History, and Mathematics folders move to Education; General moves to Personal. Existing documents, tasks, and schedules remain in browser storage. Each workspace shows its own materials and deadlines. Finance has a manual income/expense overview in Philippine pesos; these entries are estimates based solely on what you enter, with no bank connection. In Documents, use Move to place a file in any workspace. In Ask Kusa, say `Move report.pdf to Finance` for a matching file in the current workspace; Kusa asks you to confirm the destination. This command matches an existing filename; it does not automatically classify the contents of a file. Export a workspace backup before clearing browser data.
