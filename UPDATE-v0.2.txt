@@ -1,0 +1,23 @@
+Kusa v0.2 — Logo and motion update
+
+Changes:
+- Transparent logo with its complete wordmark and sparkle visible.
+- Responsive object-fit: contain sizing; removed the cropped, offset image positioning.
+- Short fade/slide transitions between screens, tabs and folders.
+- Hover and press feedback for buttons; subtle dialog opening motion.
+- Reduced-motion accessibility setting respected.
+
+Update your existing app:
+1. Export a backup in Kusa Settings as a precaution.
+2. Stop the old server with Ctrl+C in its console.
+3. Extract this ZIP and replace the old server.py and web folder with the included versions.
+   Keep your existing .venv folder. You do not need to rerun setup.bat.
+4. Start Kusa using start.bat in your existing app folder.
+5. Open the SAME browser and http://localhost:8765 address, then press Ctrl+F5.
+
+Existing browser workspace storage uses the same key and is not migrated or cleared.
+If installing into a new folder, follow README.md and run setup.bat first.
+
+Validation: JavaScript and Python syntax checks and existing workspace logic checks passed.
+Logo alpha channel inspected; CSS uses contain with no clipping or offsets.
+Browser visual/animation verification remains to be checked on your computer.

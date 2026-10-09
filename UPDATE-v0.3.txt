@@ -1,0 +1,11 @@
+Kusa v0.3 — Clear startup and reliable update identification
+
+1. Close the old Kusa command window.
+2. Extract this ZIP and open the kusa folder inside it.
+3. Double-click start.bat. It sets up this folder if needed and opens your browser ONLY after the server starts successfully.
+4. The browser tab must read "Kusa v0.3". Settings also shows v0.3.
+
+If the address is already occupied, the command window will explain the problem instead of opening an old build. Send a screenshot of that window if you need help.
+
+The transparent full logo and page/button animations are included. Animations respect the Windows/browser reduced-motion preference.
+Your workspace stays under the same localhost address and browser storage key.
