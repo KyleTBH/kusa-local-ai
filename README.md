@@ -57,7 +57,7 @@ Documents are split into excerpts and ranked by word overlap with the question. 
 
 The model proposes task titles only. Users choose which to save; dates and times are entered explicitly rather than guessed. Imported documents are treated as data, not instructions, in the prompt. No autonomous tools, external actions, cloud AI, remote fonts, analytics, or CDNs are used.
 
-The layout is phone-sized, but inference runs on the laptop hosting the app. This package does not expose the server to phones on the network and does not implement on-phone inference. It is not ready to deploy as a public hosted service.
+The layout supports phones, and paired phones can access Kusa over the same Wi‑Fi while the computer runs the app. Ask Kusa’s AI inference runs on the computer, not on the phone. This app is not designed to run as a public hosted service.
 
 ## Validation and remaining checks
 
